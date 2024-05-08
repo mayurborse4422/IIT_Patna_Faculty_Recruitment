@@ -474,8 +474,8 @@ app.post("/reset", async (req, res) => {
     from: "IIT PATNA<support>.com",
     to: email,
     subject: "password-reset-link",
-    text: `Click the following link to reset your password: http://localhost:8000/reset-password/${token}`,
-    html: `<p>Click the following link to reset your password:</p><p><a href="http://localhost:8000/reset-password/${token}">http://localhost:8000/reset-password/${token}</a></p>`,
+    text: `Click the following link to reset your password: https://iitpfacultyrecruitment.onrender.com/reset-password/${token}`,
+    html: `<p>Click the following link to reset your password:</p><p><a href="https://iitpfacultyrecruitment.onrender.com/reset-password/${token}">https://iitpfacultyrecruitment.onrender.com/reset-password/${token}</a></p>`,
   };
   await transporter.sendMail(mailOptions, (err, info) => {
     if (err) {
